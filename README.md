@@ -10,7 +10,9 @@ The sentences that follow some grammar points are not examples from a book.
 They are sentences that I wrote myself to practice using the grammar.
 Since I am not a native speaker, they probably contain many errors.
 
-To view the notes, click here:
+Since I have added some extensions to the Markdown format to make it easier to
+write the notes, you will need to view them at the link below, rather than
+clicking on them within the Github source view.
 
 [Japanese Grammar Notes](https://shonferg.github.io/japanese-grammar-notes)
 
