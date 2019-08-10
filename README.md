@@ -1,6 +1,6 @@
 # Japanese Grammar Notes
 
-These are my personal notes from studding for grammar portion of the the JLPT test.
+These are my personal notes from studying for grammar portion of the the JLPT test.
 I don't make any claims as to their accuracy or usefulness for others.
 
 The main goal is to be brief to allow easy review, not to be comprehensive.
