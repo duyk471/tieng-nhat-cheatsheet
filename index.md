@@ -10,6 +10,8 @@ The sentences that follow some grammar points are not examples from a book.
 They are sentences that I wrote myself to practice using the grammar.
 Since I am not a native speaker, they probably contain many errors.
 
+If you do notice errors, I appreciate corrections.
+
 [JLPT N3 Grammar Notes](?n3)
 
 [JLPT N2 Grammar Notes](?n2)
