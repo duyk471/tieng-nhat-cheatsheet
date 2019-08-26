@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'MyMinchoFont';
-    src: local('Kozuka Mincho Pr6N R'), local('小塚明朝 Pr6N R'), local('Yu Mincho'), local('游明朝'), local('Hiragino'), local('Hiragino Mincho ProN'), local('MS Mincho');
+    src: local('Kozuka Mincho Pr6N'), local('小塚明朝 Pr6N'), local('Yu Mincho'), local('游明朝'), local('Hiragino'), local('Hiragino Mincho ProN'), local('MS Mincho');
     unicode-range: U+2000-FFFF;
 }
 
