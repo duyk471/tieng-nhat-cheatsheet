@@ -33,14 +33,40 @@ body {
     font-size: 20px;
 }
 
-em {
+em, blockquote {
     font-family: Georgia;
     font-size: 80%;
+}
+
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+blockquote em {
+    color: #555;
+}
+
+blockquote > ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+blockquote > ul > li::before {
+    content: "📖 ";
 }
 
 sq {
     border: 1px solid #000;
     font-weight: bold;
+}
+
+.formal {
+    border: 1px solid darkorange;
+    padding: 0 5px;
+    color: darkorange;
 }
 
 h1, h2, h3, #toc {
@@ -128,6 +154,9 @@ table.fullLines > tbody > tr > td {
 
 #toc ul {
     padding-left: 1em;
+    margin-left: 0;
+    padding-left: 2em;
+    text-indent: -2em;
 }
 
 #toc a:visited {
@@ -141,6 +170,10 @@ table.fullLines > tbody > tr > td {
 
 #toc a:hover {
     background: rgb(197, 212, 255);
+}
+
+#toc ul {
+    list-style: none;
 }
 
 #contents-container {

@@ -34,7 +34,10 @@ let replacements = {
     "noun": "<sq>名</sq>",
     "verb": "<sq>動</sq>",
     "i-adj": "<sq>イ形</sq>",
-    "na-adj": "<sq>ナ形</sq>"
+    "na-adj": "<sq>ナ形</sq>",
+    "formal": "<span class='formal'>Formal</span>",
+    "skm": "<em>Shin Kanzen Master</em>",
+    "djg": "<em>A Dictionary of Japanese Grammar</em>"
 };
 
 function renderReplacements(text) {
