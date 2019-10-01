@@ -36,6 +36,7 @@ let replacements = {
     "i-adj": "<sq>イ形</sq>",
     "na-adj": "<sq>ナ形</sq>",
     "formal": "<span class='formal'>Formal</span>",
+    "casual": "<span class='casual'>Casual</span>",
     "skm": "<em>Shin Kanzen Master</em>",
     "djg": "<em>A Dictionary of Japanese Grammar</em>"
 };

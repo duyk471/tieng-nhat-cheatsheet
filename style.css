@@ -71,6 +71,13 @@ sq {
     color: darkorange;
 }
 
+.casual {
+    border: 1px solid darkgreen;
+    padding: 0 10px;
+    color: darkgreen;
+    border-radius: 20px;
+}
+
 h1, h2, h3, #toc {
     font-family: MyGothicFont, MyEnglishFont;
 }
