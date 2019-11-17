@@ -71,7 +71,14 @@ sq {
     color: darkorange;
 }
 
-.casual {
+.written {
+    border: 1px solid darkorange;
+    padding: 0 10px;
+    color: darkorange;
+    border-radius: 0px 20px;
+}
+
+.spoken {
     border: 1px solid darkgreen;
     padding: 0 10px;
     color: darkgreen;
