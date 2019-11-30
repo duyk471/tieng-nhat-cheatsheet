@@ -23,6 +23,10 @@ window.onload = function () {
     xhr.send();
 }
 
+function syncToc(anchor) {
+    document.getElementById("toc_" + anchor).scrollIntoView();
+}
+
 function renderRuby(text) {
     return text.replace(/{([一-龠]*)\|([ぁ-ゔ,]*)}/gi, replaceRuby);
 }
@@ -111,10 +115,10 @@ function processMarkdown(markdownText) {
         // Add TOC entry
         tocEntries.push({
             level: level,
-            text: `<li><a href="#${anchor}">${text}</a></li>\n`
+            text: `<li><a id="toc_${anchor}" href="#${anchor}">${text}</a></li>\n`
         });
 
-        return `<h${level} id="${anchor}">${text}</h${level}>\n`;
+        return `<h${level} id="${anchor}" onClick="syncToc('${anchor}');">${text}</h${level}>\n`;
     };
 
     let options = {renderer: renderer };
