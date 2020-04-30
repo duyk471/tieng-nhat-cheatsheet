@@ -128,27 +128,7 @@ function processMarkdown(markdownText) {
 
     // Do text replacements based on token type
 
-    for (let i = 0; i < tokens.length; ++i) {
-        let t = tokens[i];
-        if ("type" in t) {
-            switch (t.type) {
-                case "paragraph":
-                case "text":
-                    t.text = renderRuby(t.text);
-                    t.text = renderReplacements(t.text);
-                    t.text = renderStrikeThrough(t.text);
-                    break;
-                case "html":
-                    t.text = renderRuby(t.text);
-                    t.text = renderReplacements(t.text);
-                    t.text = renderStrikeThrough(t.text);
-                    t.text = renderBoldItalic(t.text);
-                    t.text = renderBold(t.text);
-                    t.text = renderItalic(t.text);
-                    break;
-            }
-        }
-    }
+    doTextReplacements(tokens);
 
     let contentHtml = marked.parser(tokens, options);
 
@@ -182,6 +162,38 @@ function processMarkdown(markdownText) {
         window.location.assign(window.location.href);
     }
 };
+
+function doTextReplacements(tokens) {
+    for (let i = 0; i < tokens.length; ++i) {
+        let t = tokens[i];
+        if ("type" in t) {
+            switch (t.type) {
+                case "list":
+                    for(let item of t.items) {
+                        doTextReplacements(item.tokens);
+                    }
+                    break;
+                case "paragraph":
+                case "text":
+                    t.text = renderRuby(t.text);
+                    t.text = renderReplacements(t.text);
+                    t.text = renderStrikeThrough(t.text);
+                    break;
+                case "html":
+                    t.text = renderRuby(t.text);
+                    t.text = renderReplacements(t.text);
+                    t.text = renderStrikeThrough(t.text);
+                    t.text = renderBoldItalic(t.text);
+                    t.text = renderBold(t.text);
+                    t.text = renderItalic(t.text);
+                    break;
+            }
+        }
+        if ("tokens" in t) {
+            doTextReplacements(t.tokens);
+        }
+    }
+}
 
 function makeRuby(kanji, kana) {
     if (kana.length / 2 > kanji.length) {
