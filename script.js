@@ -1,13 +1,20 @@
 window.onload = function () {
     let mdFile = "index.md";
-    let href = window.location.hash;
+    let anchor = null;
 
-    let parts = window.location.href.split("?");
+    let parts = decodeURI(window.location.href).split("?");
     if (parts.length > 1) {
-        mdFile = parts[1].split("#")[0] + ".md";
+
+        let subParts = parts[1].split("#");
+
+        mdFile = subParts[0] + ".md";
 
         if (mdFile.startsWith("..")) {
             mdFile = "index.md";
+        }
+
+        if (subParts.length > 1) {
+            anchor = subParts[1];
         }
     }
 
@@ -15,6 +22,10 @@ window.onload = function () {
     xhr.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             processMarkdown(this.responseText);
+
+            if (anchor != null) {
+                syncToc(anchor);
+            }
         } else if (this.readyState == 4 && this.status == 0) {
             processMarkdown("# Error\n\n Could not find " + mdFile);
         }
@@ -24,7 +35,10 @@ window.onload = function () {
 }
 
 function syncToc(anchor) {
-    document.getElementById("toc_" + anchor).scrollIntoView();
+    let element = document.getElementById("toc_" + anchor);
+    if (element != undefined && element != null) {
+        element.scrollIntoView();
+    }
 }
 
 function renderRuby(text) {
@@ -36,14 +50,27 @@ let replacements = {
     "wave": "<span class='j-font'>～</span>",
     "dots": "<span class='j-font'>…</span>",
     "noun": "<sq>名</sq>",
+    "dict-form": "辞書形",
+    "plain-form": "普通形",
+    "te-form": "て形",
+    "ta-form": "た形",
+    "nai-form": "ない形",
+    "teiru-form": "ている形",
+    "volitional-form": "う/よう形(volitional)",
+    "potential-form": "える/られる形(potential)",
+    "present": "現在",
     "verb": "<sq>動</sq>",
+    "particle": "<sq>助</sq>",
     "i-adj": "<sq>イ形</sq>",
     "na-adj": "<sq>ナ形</sq>",
     "formal": "<span class='formal'>Formal</span>",
     "spoken": "<span class='spoken'>Spoken</span>",
     "written": "<span class='written'>Written</span>",
     "skm": "<em>Shin Kanzen Master</em>",
-    "djg": "<em>A Dictionary of Japanese Grammar</em>"
+    "djg": "<em>A Dictionary of Japanese Grammar</em>",
+    "u-verb": "<sq>ウ動</sq>",
+    "ru-verb": "<sq>ル動</sq>",
+    "irreg-verb": "<sq>Irreg.動</sq>"
 };
 
 function renderReplacements(text) {
@@ -101,7 +128,9 @@ function processMarkdown(markdownText) {
 
     // Override heading function
 
-    renderer.heading = function (text, level) {
+    renderer.heading = function (textObject, level) {
+        let text = textObject.text;
+
         // Strip furigana
         let anchor = text.replace(/{([一-龠]*)\|([ぁ-ゔ,]*)}/gi, function(text, kanji, kana) {
             return kanji;
@@ -115,10 +144,10 @@ function processMarkdown(markdownText) {
         // Add TOC entry
         tocEntries.push({
             level: level,
-            text: `<li><a id="toc_${anchor}" href="#${anchor}">${text}</a></li>\n`
+            text: `<li><a id="toc_${anchor}" onClick="syncToc('${anchor}');" href="#${anchor}">${text}</a></li>\n`
         });
 
-        return `<h${level} id="${anchor}" onClick="syncToc('${anchor}');">${text}</h${level}>\n`;
+        return `<a id="toc_${anchor}" onClick="syncToc('${anchor}');" href="#${anchor}"><h${level} id="${anchor}">${text}</h${level}></a>\n`;
     };
 
     let options = {renderer: renderer };
