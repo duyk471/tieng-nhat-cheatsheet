@@ -128,9 +128,7 @@ function processMarkdown(markdownText) {
 
     // Override heading function
 
-    renderer.heading = function (textObject, level) {
-        let text = textObject.text;
-
+    renderer.heading = function (text, level) {
         // Strip furigana
         let anchor = text.replace(/{([一-龠]*)\|([ぁ-ゔ,]*)}/gi, function(text, kanji, kana) {
             return kanji;
@@ -150,7 +148,10 @@ function processMarkdown(markdownText) {
         return `<a id="toc_${anchor}" onClick="syncToc('${anchor}');" href="#${anchor}"><h${level} id="${anchor}">${text}</h${level}></a>\n`;
     };
 
-    let options = {renderer: renderer };
+    let options = {
+        renderer: renderer,
+        enableEscaping: false
+     };
 
     const lexer = new marked.Lexer(options);
     const tokens = lexer.lex(markdownText);
