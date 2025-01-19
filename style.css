@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'MyMinchoFont';
-    src: local('Kozuka Mincho Pr6N'), local('小塚明朝 Pr6N'), local('Yu Mincho'), local('游明朝'), local('Hiragino'), local('Hiragino Mincho ProN'), local('MS Mincho');
+    src: local('HGS教科書体'), local('Kozuka Mincho Pr6N'), local('小塚明朝 Pr6N'), local('Yu Mincho'), local('游明朝'), local('Hiragino'), local('Hiragino Mincho ProN'), local('MS Mincho');
     unicode-range: U+2000-FFFF;
 }
 
@@ -30,7 +30,7 @@
 body {
     font-family: MyMinchoFont, MyEnglishFont;
     font-variant-east-asian: jis04;
-    font-size: 20px;
+    font-size: 16pt;
 }
 
 em, blockquote {
@@ -99,14 +99,18 @@ rt {
 
 h1 {
     color:rgb(52, 76, 151);
+    font-size: 24pt;
 }
 
 h2 {
     color:rgb(55, 94, 212);
+    font-size: 20pt;
 }
 
 h3 {
     color:rgb(58, 112, 255);
+    font-size: 18pt;
+    font-weight: bold;
 }
 
 pre {

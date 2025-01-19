@@ -16,6 +16,8 @@ If you do notice errors, I appreciate corrections.
 
 [JLPT N2 Grammar Notes](?n2)
 
+[Kanji in Context AI Generated Stories](?kanji-in-context-stories)
+
 # References
 
 The notes mostly follow the order of presentation in Shin Kanzen Master.  I use
@@ -40,6 +42,10 @@ the other books to double-check my understanding.
 [A Dictionary of Intermediate Japanese Grammar](https://www.amazon.com/Dictionary-Intermediate-Japanese-Grammar/dp/4789007758)
 
 [A Dictionary of Advanced Japanese Grammar](https://www.amazon.com/Dictionary-Advanced-Japanese-Grammar-English/dp/4789012956)
+
+## Kanji
+
+[Kanji in Context](https://www.amazon.com/Kanji-Context-Reference-Book-Rivesed/dp/4789015297)
 
 # Markdown Extensions
 
