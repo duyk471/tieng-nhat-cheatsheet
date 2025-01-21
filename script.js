@@ -32,6 +32,21 @@ window.onload = function () {
     };
     xhr.open("GET", mdFile + "?_=" + new Date().getTime());
     xhr.send();
+
+
+    const body = document.body;
+    const toggleLink = document.getElementById('toc-toggle');
+
+    toggleLink.addEventListener('click', () => {
+        body.classList.toggle('shrunk');
+
+        // Update the arrow direction
+        if (body.classList.contains('shrunk')) {
+            toggleLink.textContent = '≫'; // Expand arrow
+        } else {
+            toggleLink.textContent = '≪'; // Collapse arrow
+        }
+    });
 }
 
 function syncToc(anchor) {

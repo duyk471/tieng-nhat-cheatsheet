@@ -28,9 +28,18 @@
 }
 
 body {
+    display: grid;
+    grid-template-columns: 20% auto; /* Define column sizes: TOC is 20%, content takes the remaining space */
+    grid-template-rows: 100%; /* Single row layout */
+    height: 100vh; /* Full height layout */
+    margin: 0;
     font-family: MyMinchoFont, MyEnglishFont;
     font-variant-east-asian: jis04;
     font-size: 16pt;
+}
+
+body.shrunk {
+    grid-template-columns: 1.5em auto; /* TOC shrinks to 50px, content takes remaining space */
 }
 
 em, blockquote {
@@ -160,14 +169,37 @@ table.fullLines > tbody > tr > td {
 }
 
 #toc-container {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 20%;
+    grid-column: 1; /* First column */
+    grid-row: 1; /* Full height in the first row */
+    width: 100%; /* Not strictly necessary, but ensures proper sizing */
     height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
     background: #FAFAFF;
+    position: relative;
+}
+
+#toc-toggle {
+    position: absolute;
+    top: 0px; /* Adjust to position the toggle at the top of TOC */
+    right: 0px; /* Adjust to position the toggle on the left */
+    z-index: 10; /* Ensure it is above other content */
+    cursor: pointer; /* Make it clear that it's clickable */
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 1.5em;
+    height: 1.5em;
+    float: right;
+}
+
+#toc-content {
+    overflow: hidden; /* Prevent internal overflow from spilling outside bounds */
+}
+
+body.shrunk #toc-content {
+    visibility: hidden; /* Hide the content completely */
+    height: 0; /* Collapse the content completely */
 }
 
 #toc {
@@ -223,11 +255,8 @@ a:hover {
 }
 
 #contents-container {
-    position: absolute;
-    top: 0px;
-    left: 20%;
-    width: 80%;
-    height: 100%;
+    grid-column: 2; /* Second column */
+    grid-row: 1; /* Full height in the first row */
     overflow-y: auto;
     overflow-x: hidden;
 }
