@@ -1,44 +1,60 @@
-# Japanese Grammar Notes
+# Publish your Obsidian Notes
 
-These are my personal notes from studying for the grammar portion of the the JLPT test.
-I don't make any claims as to their accuracy or usefulness for others.
+MkDocs template [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
 
-The main goal is to be brief to allow easy review, not to be comprehensive.
-For comprehensive coverage, refer to the list of references below.
+Would you like to take _some_ of your notes in [Obsidian](https://obsidian.md/) and make it public?
 
-The sentences that follow some grammar points are not examples from a book.
-They are sentences that I wrote myself to practice using the grammar.
-Since I am not a native speaker, they probably contain many errors.
+This template gives you an easy (and automated) way to publish your Obsidian notes (or blog!) on your Github pages.
 
-If you do notice errors, I appreciate corrections.
+With this template, you get these **out-of-the-box**:
 
-Since I have added some extensions to the Markdown format to make it easier to
-write the notes, you will need to view them at the link below, rather than
-clicking on them within the Github source view.
+- an awesome website based on Material theme, complete with a search bar (Checkout this template repo published [here](https://jobindjohn.github.io/obsidian-publish-mkdocs/))
+![](2021-11-22-22-49-26.png)
+- get the Obsidian/Roam style `[[wikilinks]]` from your vault in your published notes
+- Toggle between light and dark mode
+- Blog folder
 
-[Japanese Grammar Notes](https://shonferg.github.io/japanese-grammar-notes)
+## Quick start
 
-# References
+1. Create a **new github repository using this template**. Click the green button at the top or use [this link](https://github.com/jobindjohn/obsidian-publish-mkdocs/generate). 
 
-The notes mostly follow the order of presentation in Shin Kanzen Master.  I use
-the other books to double-check my understanding.
+![](2021-11-22-22-54-02.png)
 
-## Shin Kanzen Master
+2.  **Give a name** to your repository. By default your notes will be published at `<https://username.github.io/repo-name/>`
+     - Copy only the `main` branch while creating the repo from the template
+3. **Clone** the repository you generated **into your Obsidian folder/vault.**
+4. **Move your notes** that you would like to make public to the `repo-name/docs` folder.
+    - Easiest way to do this would be using drag and drop within Obsidian
+5. Commit and **push** the changes. Github actions will take care of the rest, publishing your notes using [MkDocs](https://www.mkdocs.org/), with the [Material theme](https://squidfunk.github.io/mkdocs-material/). 
+6. Go to `Settings > Pages` and select the select the **Source** as your `gh-pages` branch.
 
-[Shin Kanzen Master N3 Grammar](https://www.amazon.com/Grammar-Japanese-Language-Proficiency-Complete/dp/4883196100)
+![](2021-11-22-22-52-49.png)
 
-[Shin Kanzen Master N2 Grammar](https://www.amazon.com/Grammar-Japanese-Language-Proficiency-Nihongo/dp/4883195651)
+**Not working for you?** Open an [issue](https://github.com/jobindjohn/obsidian-publish-mkdocs/issues/new/choose) and let me know what went wrong.
 
-## Nihongo So Matome
+## Configuring your website
 
-[Nihongo So Matome N3 Grammar](https://www.amazon.com/Nihongo-So-matome-Japanese-Language-Proficiency/dp/4872177320)
+### How do I arrange notes as sections and pages?
 
-[Nihongo So Matome N2 Grammar](https://www.amazon.com/Nihongo-So-matome-Essential-Practice-Proficiency/dp/4872177290)
+By default, the sections and pages will follow the folder structure within `/docs`. The folders and sub-folders will show up as sections. Try not to have white spaces in your folder and file names, as these will be converted to HTML links. The webpage heading will be the same as the first-level heading in the markdown note.
 
-## A Dictionary of Japanese Grammar
+- If you would like to arrange the pages manually, then use the `nav` option in the `mkdocs.yml` [configuration file](https://www.mkdocs.org/#adding-pages) at the root of this repo  to set custom page navigation.
+    - For example, see the setup for [the Blue Book](https://lyz-code.github.io/blue-book/) at [github](https://github.com/lyz-code/blue-book/blob/master/mkdocs.yml). Managing each page using `nav` can become cumbersome as the number of notes increase though!
+- The Materials theme provides multiple options to arrange [sections](https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-sections), use [navigation tabs](https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-tabs), and many other helpful [navigation setups](https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/)
 
-[A Dictionary of Basic Japanese Grammar](https://www.amazon.com/Dictionary-Basic-Japanese-Grammar/dp/4789004546)
+## Alternatives
 
-[A Dictionary of Intermediate Japanese Grammar](https://www.amazon.com/Dictionary-Intermediate-Japanese-Grammar/dp/4789007758)
+- [binyamin/eleventy-garden: :seedling: A starter site for building a mind garden with eleventy](https://github.com/binyamin/eleventy-garden)
+- [datopian/obsidian-flowershow](https://github.com/datopian/obsidian-flowershow): plugin for publishing with flowershow direct from your obsidian vault.
+- [kmaasrud/oboe](https://github.com/kmaasrud/oboe): tool to convert an Obsidian vault into a static directory of HTML files.
+- [Jackiexiao/foam-mkdocs-template](https://github.com/Jackiexiao/foam-mkdocs-template): template for Obsidian/Foam using mkdocs/mkdocs-material/mkdocs-roamlinks-plugin
+- [foambubble/foam-template](https://github.com/foambubble/foam-template): Foam workpace template
+- [ObsidianPublisher/obsidian-mkdocs-publisher-template](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template): Obsidian Mkdocs Publisher, a free obsidian publish alternative throught Mkdocs
+- [KosmosisDire/obsidian-webpage-export](https://github.com/KosmosisDire/obsidian-webpage-export): Webpage HTML Export lets you export single files or whole vaults as HTML websites or documents. It is similar to publish, but you get direct access to the exported HTML.
+- [Enveloppe/obsidian-enveloppe: publish your notes on a GitHub repository from Obsidian Vault](https://github.com/Enveloppe/obsidian-enveloppe)
 
-[A Dictionary of Advanced Japanese Grammar](https://www.amazon.com/Dictionary-Advanced-Japanese-Grammar-English/dp/4789012956)
+## Other interesting projects
+
+- [mathieudutour/gatsby-digital-garden: digital garden with Gatsby](https://github.com/mathieudutour/gatsby-digital-garden)
+- [TuanManhCao/digital-garden: Free Obisidian Publish alternative](https://github.com/TuanManhCao/digital-garden)
+

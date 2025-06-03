@@ -1,0 +1,2 @@
+- [Lecture 88](https://kellenok.github.io/cure-script/88-x%E3%82%92%E3%81%97%E3%81%9F%E3%81%84-vs-x%E3%81%8C%E3%81%97%E3%81%9F%E3%81%84.html)
+- 
