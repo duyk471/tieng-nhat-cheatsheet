@@ -6,6 +6,7 @@ Trong tiếng Nhật, ta có ba loại *đầu máy*:
 
 Nhưng điều quan trọng nhất là: **cả ba loại đầu máy này đều có thể được dùng như tính từ** – tức là dùng để bổ nghĩa cho danh từ, dù đó là động từ, danh từ hay tính từ.
 
+NHƯNG: Every adjective has to end in the kana い
 #### Tính từ đuôi い
 
 Một câu đơn giản như:
@@ -62,3 +63,5 @@ Lưu ý: Không phải danh từ nào cũng dùng được theo kiểu này. Ch�
 Nếu có ai thắc mắc "khi nào dùng な và khi nào dùng の?" thì câu trả lời là chịu :)). Nói chung là càng học nhiều thì càng nhớ nhiều trường hợp. Mà cũng không cần thiết phải học lắm nếu sử dụng bình thường vì về cơ bản người ta vẫn sẽ hiểu nghĩa thôi.
 
 
+### Cách "chia" tính từ
+-い and add whatever we're going to add, the specific adjectival modifications all come from the か-き-く-け-こ row.

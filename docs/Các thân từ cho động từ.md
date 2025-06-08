@@ -41,7 +41,8 @@ Dùng để làm:
 We use the え-row sticky stem để tạo [[Thể khả năng (る、られる)]] của động từ, which means you “can do” the verb. The helper verb, which is stuck onto the え-row sticky stem, is る / られる. So, we have かえる, can buy; きける, can hear; はなせる, can speak, and so forth; plus たべられる, can eat. 
 ### Thân từ お
 
-Được tạo bằng cách đổi **う → お + う**. Ví dụ: かく → かこう, のむ → のもう, はなす → はなそう. Với **ichidan (る-verbs)**: bỏ る + よう (たべる → たべよう)
+Được tạo bằng cách đổi **う → お + う**. Ví dụ: かく → かこう, のむ → のもう, はなす → はなそう.
+Với **ichidan (る-verbs)**: bỏ る + よう (たべる → たべよう)
 
 And what we do with this sticky stem is attach う, and, as you know, う when attached to お generally lengthens the お. So かう doesn’t become kao-u, it becomes かおう/kaō; 
 
@@ -52,3 +53,7 @@ In the ichidan form, we add よう to the end of the ichidan sticky stem. (And o
 One peculiarity of the volitional form is that you can also make it by changing the form of ます to use the volitional in its formal (polite) mode.
 
 So, いきましょう, let’s go.
+
+Đây là một bảng để sử dụng khi cần chia.
+
+![[vobzsSK.jpeg]]

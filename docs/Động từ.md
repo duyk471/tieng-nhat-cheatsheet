@@ -1,3 +1,4 @@
+Ghi nhớ nhanh là: Every verb ends in an -う row kana – and it has to be a kana, it can’t be included in kanji.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xDxMzqlEjVs?si=72O7D0rPo4TZAmbx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 _(Bài 4 của Cure Dolly)_

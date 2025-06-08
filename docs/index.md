@@ -9,6 +9,7 @@ Bắt đầu từ bài viết [[Cấu trúc câu nền tảng]] (Bài 1 + Bài 2
 - [[Tính từ]] (Bài 6)
 - [[Trợ từ]]
 - [[Dạng từ]] - Word Form. Đây chính là một bài viết tổng quan cho toàn bộ những kiểu từ xoay quanh cấu trúc câu Tiếng Nhật.
+- [[Thứ tự các từ trong Tiếng Nhật]]
 ### Các chủ đề phân theo mục lục cũ
 - Bài 7: [[Các thân từ cho động từ]] (Chính là bài viết về "Chia động từ")
 - Bài 8: [[Trợ từ に]] & [[Trợ từ へ]]
@@ -33,7 +34,18 @@ Bắt đầu từ bài viết [[Cấu trúc câu nền tảng]] (Bài 1 + Bài 2
 - Bài 27: [[ばかり]]
 - Bài 28: [[ように]]
 - Bài 29: [[ことにする・ことになる]]
-- Từ bài 45 -> 49 được lưu trong Kindle
+- Bài 30: [[Câu điều kiện]]: [[Trợ từ と]]
+- Bài 31: [[Câu điều kiện]] (ば れば)
+- Bài 32: [[Câu điều kiện]] (たら, なら)
+- Bài 33: Chỉ giới hạn [[だけ, しか, ばかり, のみ]]
+- Bài 34: [[Mệnh đề logic]]
+- Bài 35: [[より, のほう, 一方]]
+- Bài 41: 5 key facts about the basic structure of Japanese (Cái này thì mình đã thêm từng ghi chú một vào trong từng bài tương ứng). Một FACT: Nearly all Japanese words fall into one of three categories: Nouns, Verbs, and Adjectives.
+- Bài 42: [[まま]], tiện học được luôn [[我が]]
+- Bài 44: [[ちゃう, ちゃった]]
+- Bài 45: First-Step Guide into Self Immersion Technique (Không ghi chú)
+- Bài 46: Đây là bài về hai quy tắc quan trọng nhất cho: [[Thứ tự các từ trong Tiếng Nhật]]
+- Bài 47:
 - Bài 50: [[させてもらう]]
 - Bài 54: [[Bất quy tắc - 見る, 見られる, 見れる, 見える, 聞く, 聞ける, 聞こえる ]]
 - Bài ?? [[体言 & 用言]]

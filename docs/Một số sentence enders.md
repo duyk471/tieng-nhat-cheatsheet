@@ -1,5 +1,5 @@
 Nhiều lắm nhưng liệt kê qua thì có: かい、だい,、ぜ、ぞ、さ、から、し、ちょうだい
-
+`よ` or `ね` or `よね`
 ### かい
 Về cơ bản là か (`かい` is simply a softened and colloquial form of `か`), nghe hơi *rough* chút (Theo kinh nghiệm Immersion của tui thì thường có nam giới mới dùng かい thôi):
 Ví dụ: 
