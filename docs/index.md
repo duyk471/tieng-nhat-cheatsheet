@@ -23,12 +23,12 @@ Bắt đầu từ bài viết [[Cấu trúc câu nền tảng]] (Bài 1 + Bài 2
 - Bài 15: [[Tự động từ & Tha động từ]]
 - Bài 16: [[Trợ từ と]] (Đang nói về や) với [[Trợ từ から]]
 - Bài 17: [[Tôn kính ngữ, khiêm nhường ngữ]]
-- Bài 18: 
+- Bài 18: [[おうとする・とする]], [[という・と言う]]
 - Bài 19: [[Thể sai khiến (せる、させる)]]
 - Bài 20: [[Phương hướng]]
 - Bài 21: [[てある・ている・ておく]]
-- Bài 22:
-- Bài 23:
+- Bài 22: [[ては・ても]]
+- Bài 23: [[だって + だから & それから]]
 - Bài 24 + 25: [[らしい・そうだ・そうです・っぽい]]
 - Bài 26: [[ようだ・のように・のような ・みたい]], có cả [[Trợ từ か]]
 - Bài 27: [[ばかり]]
@@ -45,12 +45,15 @@ Bắt đầu từ bài viết [[Cấu trúc câu nền tảng]] (Bài 1 + Bài 2
 - Bài 44: [[ちゃう, ちゃった]]
 - Bài 45: First-Step Guide into Self Immersion Technique (Không ghi chú)
 - Bài 46: Đây là bài về hai quy tắc quan trọng nhất cho: [[Thứ tự các từ trong Tiếng Nhật]]
-- Bài 47:
+- Bài 47 -> 48: Để trống, học về quy tắc chung trong Tiếng Nhật
+- Bài 49: [[もらう・てもらう]]
 - Bài 50: [[させてもらう]]
+- Bài 51 -> 53: Tiêu thụ nội dung và phân tích câu Tiếng Nhật
 - Bài 54: [[Bất quy tắc - 見る, 見られる, 見れる, 見える, 聞く, 聞ける, 聞こえる ]]
 - Bài ?? [[体言 & 用言]]
 - Bài 57: [[Động từ ghép]], một số ví dụ tương ứng như [[込む]] hay [[出す]]
 - Bài 58: [[Trợ từ đôi]]
+- Bài 59 + 60: Lý thuyết chung.
 - Bài 61 là về [[は、も]], [[Trợ từ が]], đi sâu hơn
 - Bài 62:  Bài về ておく trong [[てある・ている・ておく]] và てしまう trong [[Thể て + Trợ động từ]]
 - Bài 63: [[Một số sentence enders]]
@@ -58,8 +61,8 @@ Bắt đầu từ bài viết [[Cấu trúc câu nền tảng]] (Bài 1 + Bài 2
 - Bài 65: [[行く、来る、て行く、て来る]]
 - Bài 66: Nói thêm về chủ ngữ ẩn [[Chủ ngữ trong Tiếng Nhật]]
 - Bài 67: Mấy bài này hình như học trong Kindle
-- Bài 68: 
-- Bài 69: Native content
+- Bài 68: [[わけ]]
+- Bài 69: Học từ nội dung Nhật
 - Bài 70: かける
 - Bài 71:
 - Bài 72: [[気]]
@@ -77,21 +80,30 @@ Bắt đầu từ bài viết [[Cấu trúc câu nền tảng]] (Bài 1 + Bài 2
 - Bài 88: Xをしたい Vs Xがしたい??
 - Bài 89: Lại viết tiếp về chủ ngữ, [[Chủ ngữ trong Tiếng Nhật]]
 - Bài 90: [[Dấu câu trong Tiếng Nhật]]
-- Từ bài 91 đến bài 97 được ghi chú trên máy khác
+- Bài 91: [[限る・限り]]
+- Bài 92: Nói về từ mượn từ Tiếng Anh sang. Các từ mượn này thường cũng được biến tấu khủng khiếp...
+- Bài 93: [[くせに]]
+- Bài 94: [[くらい・ほど]]
+- Bài 95: [[どうも、やっぱり、やはり]]
+- Bài 96: [[通り＆せっかく]]
+- Bài 97: [[うち]]
 - Quá trình đắm mình vào Tiếng Nhật học được điều gì hay: [[Các ghi chú từ các bài đặc biệt của Cure Dolly]]
 ### Ngữ pháp JLPT, phân theo chủ đề
 Từ phần này sẽ bỏ qua toàn bộ các chủ đề đã có ở chương trình Organic Japanese và chỉ tập trung vào các cấu trúc thường thấy trong JLPT (Cũng thường có trong Tiếng Nhât, ít nhất là Tiếng Nhật viết với TIếng Nhật trong Anime - tùy từng loại Anime).
 
 #### N5
-....
+- [[ください＆〜ないでください]]
+- [[〜ませんか＆〜ましょう]]
+- [[ながら]]
 #### N4
 ....
 
 #### N3
-Đang viết chưa xong
-
+- [[理由・原因　（N3）]]
+- [[状況・変化　（N3）]]
+- [[立場・基準　（N3）]]
 #### N2
-Đang viết chưa xong
+- [[N2 - Unsorted]]
 
 #### N1
 Chậm chút đã....
